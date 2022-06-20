@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +7,6 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="/css/app.css">
 </head>
-
 <body class="hold-transition sidebar-mini">
     <div id="app">
         <div class="wrapper">
@@ -27,7 +25,6 @@
                         <a href="#" class="nav-link">Contact</a>
                     </li>
                 </ul>
-
                 <!-- Right navbar links -->
                 <ul class="navbar-nav ml-auto">
                     <!-- Navbar Search -->
@@ -209,28 +206,36 @@
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fas fa-chart-pie text-blue"></i>
                                     <p>
-                                        Management
+                                        Category
                                         <i class="right fas fa-angle-left"></i>
                                     </p>
                                 </a>
                                 <ul class="nav nav-treeview" style="display: none;">
                                     <li class="nav-item">
-                                        <router-link to="/user" class="nav-link">
+                                        <router-link to="/category" class="nav-link">
                                             <i class="far fa-circle nav-icon"></i>
-                                            <p>Users</p>
+                                            <p>List</p>
                                         </router-link>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <router-link to="/profile" class="nav-link">
-                                    <i class="nav-icon fas fa-chart-pie text-yellow"></i>
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-chart-pie text-blue"></i>
                                     <p>
-                                        Profile
+                                        Content
+                                        <i class="right fas fa-angle-left"></i>
                                     </p>
-                                    </router-li>
+                                </a>
+                                <ul class="nav nav-treeview" style="display: none;">
+                                    <li class="nav-item">
+                                        <router-link to="/content" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>List</p>
+                                        </router-link>
+                                    </li>
+                                </ul>
                             </li>
-
                             <li class="nav-item">
                                 <a href="{{ route('logout') }}"
                                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
@@ -253,23 +258,6 @@
             </aside>
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
-                <!-- Content Header (Page header) -->
-                <div class="content-header">
-                    <div class="container-fluid">
-                        <div class="row mb-2">
-                            <div class="col-sm-6">
-                                <h1 class="m-0">Starter Page</h1>
-                            </div><!-- /.col -->
-                            <div class="col-sm-6">
-                                <ol class="breadcrumb float-sm-right">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active">Starter Page</li>
-                                </ol>
-                            </div><!-- /.col -->
-                        </div><!-- /.row -->
-                    </div><!-- /.container-fluid -->
-                </div>
-                <!-- /.content-header -->
                 <!-- Main content -->
                 <div class="content">
                     <div class="container-fluid">

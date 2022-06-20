@@ -56,11 +56,15 @@ Vue.filter('uppercase', function (value) {
 let Dashboard = require("./components/Dashboard.vue").default;
 let Profile = require("./components/Profile.vue").default;
 let User = require("./components/User.vue").default;
-
+//Category
+let Category = require("./components/Category/index.vue").default;
+let Content = require("./components/Content/index.vue").default;
 const routes = [
     { path: "/dashboard", component: Dashboard },
     { path: "/profile", component: Profile },
     { path: "/user", component: User },
+    { path: "/category", component: Category },
+    { path: "/content", component: Content },
 ];
 
 const router = new VueRouter({
